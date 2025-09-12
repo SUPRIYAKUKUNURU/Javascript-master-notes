@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing numbers from 1 to 100</title>
+</head>
+<body>
+    <script>
+        // let i;
+
+        let countof3 = 0;
+        let countof5 = 0;
+        let countofboth = 0;
+        for(let i= 100;i>=1;i--){
+            
+            if(i % 3 == 0 && i % 5 == 0){
+                console.log("This is multiple of both 3 and 5");
+                countofboth++;
+            }
+            else if(i % 3 == 0){
+                console.log("Multiple of 3");
+                countof3++;
+            }else if(i % 5 == 0){
+                console.log("Multiple of 5")
+                countof5++;
+            }
+            console.log(i);
+        }
+
+        console.log("Numbers that are divisible by 3:="+countof3);
+        console.log("Numbers that are divisible by 5:="+countof5);
+        console.log("Numbers that are divisible by 3 & 5:="+countofboth);
+
+
+
+    ///Normal Function......
+        function AddNumbers(){
+            a = 10;
+            b = 20;
+            document.write(a+b);
+            document.write("Hello World");
+        }
+
+   ////Arrow Function.....
+       const Add=()=>{
+        console.log(a+b)
+
+       }
+       Add();
+    </script>
+    
+</body>
+</html>

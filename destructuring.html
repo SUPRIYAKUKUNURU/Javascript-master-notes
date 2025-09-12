@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring values from an object</title>
+</head>
+<body>
+    <script>
+        const Student ={
+
+            name:"Supriya",
+            age:24,
+            address:"Bhadrachalam"
+        }
+
+        const {name , age, address } = Student;
+         document.write(name+"<br>");
+        document.write(age+"<br>");
+        document.write (address+"<br>");
+
+        // or 
+         console.log(Student.name)
+
+        const  Person=({name,age,address})=>{
+            console.log(`Student name is :${name},student age is:${age},and student from:${address}`);
+        }
+       
+
+        Person(Student);
+    </script>
+
+
+</body>
+</html>

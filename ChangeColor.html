@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the background color when clicked on button</title>
+</head>
+
+<body>
+
+    <button onclick="changeColor()"> Click me </button>
+    <script>
+        let original = true;
+        function changeColor () {
+            if(original){
+            document.body.style.backgroundColor = "Green";
+            }
+            else{
+                document.body.style.backgroundColor = "Red ";
+            }
+            original = !original;
+        }
+    </script>
+
+</body>
+
+</html>
