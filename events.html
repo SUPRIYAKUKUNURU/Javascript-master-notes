@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practise</title>
+    <style>
+        .btn {
+            color: black;
+            background-color: green;
+            border-radius: 3px;
+        }
+        .btn:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo" style="color:red;">Hello Good Morning</h1>
+    <button class="btn" onclick="changeText()">
+        Click me
+    </button>
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Hello Good Evening";
+            document.getElementById("demo").style.color="blue";
+        }
+    </script>
+</body>
+</html>
