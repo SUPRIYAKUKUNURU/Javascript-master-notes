@@ -5,6 +5,7 @@ let original ={
 let shallowCopy = Object.assign({},original)
 // let shallowCopy = {...original};
 original.address.city="Bagalore";
+console.log(Name);
 console.log(shallowCopy.address.city);
 
 // The addrees whenever we changed in original automatically address changed in shallowCopy
