@@ -3,7 +3,8 @@ let original ={
     address:{city:"Hyderabad"}
 };
 
-//let deepCopy= JSON.stringify(original) =
+//let deepCopy= JSON.stringify(original) = converts objects into String
+                // JSON.parse(original) = converts string into Object
 let deepCopy=JSON.parse(JSON.stringify(original));
 original.address.city="Bangalore";
 console.log(deepCopy.address.city);
